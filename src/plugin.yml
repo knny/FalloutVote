@@ -1,10 +1,8 @@
 name: FalloutVote
 version: 1.0
 author: knny
-
 main: me.knny.FalloutVote.FalloutVote
-
 commands:
   vote:
-    description: Fallout Voting
+    description: FalloutVote main command.
     usage: Wrong usage.
