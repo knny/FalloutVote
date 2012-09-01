@@ -38,13 +38,17 @@ public class FalloutVote extends JavaPlugin {
 			else
 			{
 		    		player.sendMessage(ChatColor.YELLOW + player.getName() + ", please vote for us at the following sites. You will get one emerald per vote.\n" +
+			        "\n" +
 		    		"Planet Minecraft  - www.test.com\n" +
 		    		"Minestatus        - www.test.com\n" +
 		    		"Best Game Servers - www.test.com\n" +
+		    		"\n" +
 		    		"You may vote every 24 hours - Thanks for voting!");
 		    		return true;
 		    	}
 		}
+		return false;
+		
 	}
 	
 }
