@@ -12,12 +12,12 @@ public class FalloutVote extends JavaPlugin {
 	
 	private static final Logger log = Logger.getLogger("Minecraft");
 	
-	public void onEnable () 
+	public void onEnable() 
 	{
 		log.info("[FalloutVote] FalloutVote enabled!");	
 	}
 	
-	public void onDisable () 
+	public void onDisable() 
 	{
 		log.info("[FalloutVote] FalloutVote disabled!");	
 	}
@@ -30,20 +30,20 @@ public class FalloutVote extends JavaPlugin {
 
 		if(cmd.getName().equalsIgnoreCase("vote")) 
 		{
-			if(!player.hasPermission("vote.command"));
+			if(!player.hasPermission("vote.command"))
 			{
 				player.sendMessage(ChatColor.RED + "You don't have permission to do this.");
 				return true;
 			}
 			else
 			{
-		    	player.sendMessage(ChatColor.YELLOW + player.getName() + ", please vote for us at the following sites. You will get one emerald per vote.\n" +
+		    		player.sendMessage(ChatColor.YELLOW + player.getName() + ", please vote for us at the following sites. You will get one emerald per vote.\n" +
 		    		"Planet Minecraft  - www.test.com\n" +
 		    		"Minestatus        - www.test.com\n" +
 		    		"Best Game Servers - www.test.com\n" +
 		    		"You may vote every 24 hours - Thanks for voting!");
-		    	return true;
-		    }
+		    		return true;
+		    	}
 		}
 	}
 	
